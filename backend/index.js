@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken");
 require("dotenv").config();
 
 const app = express();
-const authenticateToken = require("./middleware.auth.js");
+const authenticateToken = require("./auth.middleware.js");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
